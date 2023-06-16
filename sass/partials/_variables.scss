@@ -1,0 +1,16 @@
+$font-primary: Arial, sans-serif;
+$font-headings: "montserrat", sans-serif;
+
+$tablet-width: 768px;
+
+$colours : (
+    primary: #779fa1,
+    secondary: #564154,
+    accent: #88498f,
+    grey: #efefef,
+    beige: #e0cba8,
+);
+
+@function get-colour($colour) {
+    @return map-get($colours, $colour);
+}

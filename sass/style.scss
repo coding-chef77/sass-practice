@@ -1,12 +1,5 @@
-$colours : (
-    "grey" : #efefef,
-    "beige" : #e0cba0
-);
+@import "partials/variables";
+@import "partials/base";
+@import "partials/nav";
+@import "partials/forms";
 
-@function get-colour($colour) {
-    @return map-get($colours, $colour);
-}
-
-body {
-    background-image: radial-gradient(circle at center, get-colour("grey") 0%, get-colour("beige") 100%);
-}

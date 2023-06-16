@@ -1,0 +1,27 @@
+::placeholder {
+    color: white;
+}
+
+.form-common {
+    border: none;
+    height: 25px;
+    padding: 0.2rem 0.3em;
+    color: white;
+}
+
+.form-search {
+    input {
+        @extend .form-common;
+        background: darken(get-colour(primary), 10%); 
+    }
+
+    button {
+        @extend .form-common;
+        background: get-colour(secondary);
+        width: 30px; 
+        &:hover {
+            background: lighten(get-colour(secondary), 10%);
+            cursor: pointer;
+        }
+    }
+}

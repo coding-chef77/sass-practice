@@ -1,3 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-image: radial-gradient(circle at center, #efefef 0%, #e0cba0 100%);
+  background-image: radial-gradient(circle at center, #efefef, #e0cba8);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background: #779fa1;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+nav .logo {
+  font-size: 1.6em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-left: 1em;
+}
+nav a.active {
+  background: #95b4b6;
+  padding: 0.4em;
+  border-radius: 5px;
+}
+
+::-moz-placeholder {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.form-common, .form-search button, .form-search input {
+  border: none;
+  height: 25px;
+  padding: 0.2rem 0.3em;
+  color: white;
+}
+
+.form-search input {
+  background: #5e8587;
+}
+.form-search button {
+  background: #564154;
+  width: 30px;
+}
+.form-search button:hover {
+  background: #735770;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

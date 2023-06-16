@@ -11,6 +11,7 @@
 
 .form-search {
     display: none;
+    
     input {
         @extend .form-common;
         background: darken(get-colour(primary), 10%); 

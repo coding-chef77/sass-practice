@@ -10,6 +10,7 @@
 }
 
 .form-search {
+    display: none;
     input {
         @extend .form-common;
         background: darken(get-colour(primary), 10%); 
@@ -23,5 +24,31 @@
             background: lighten(get-colour(secondary), 10%);
             cursor: pointer;
         }
+    }
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+}
+
+.form-newsletter {
+    margin-bottom: 2em;
+
+    input {
+        @extend .form-common;
+        height: 45px;
+        width: 200px;
+        font-size: 14px;
+        padding: 0.4em;
+
+        &::placeholder {
+            color: black;
+        }
+    }
+
+    button {
+        @extend .form-common;
+        background: get-colour(primary);
+        height: 45px;
+        width: 80px;
     }
 }
